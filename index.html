@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Interactive Web Page</h1>
+    <button id="themeBtn">Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter Section -->
+    <section>
+      <h2>Click Counter</h2>
+      <p>Number of clicks: <span id="count">0</span></p>
+      <button id="countBtn">Click Me!</button>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+      <h2>FAQ</h2>
+      <p class="question">What is JavaScript?</p>
+      <p class="answer" style="display: none;">It is a programming language that makes web pages interactive.</p>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Sign Up Form</h2>
+      <form id="myForm">
+        <label>Name: <input type="text" id="name"></label>
+        <p class="error" id="nameError"></p>
+
+        <label>Email: <input type="text" id="email"></label>
+        <p class="error" id="emailError"></p>
+
+        <label>Password: <input type="password" id="password"></label>
+        <p class="error" id="passError"></p>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="successMsg" style="color: green;"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
